@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 # 模型載入
-@st.cache(allow_output_mutation=True)
+# @st.cache(allow_output_mutation=True)
 def load_model():
     return tf.keras.models.load_model('emnist_cnn_model.h5')
 
